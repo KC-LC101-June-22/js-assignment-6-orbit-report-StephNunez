@@ -10,7 +10,8 @@
     <tr class="data-row" *ngFor = "let indexVar of satellites">
 
         <td>{{indexVar.name}}</td>
-        <td class = warning [class.warning] = "false"> {{indexVar.type}}</td> 
+        <td class = warning > {{indexVar.type}}</td>  <!-- trying to figure out how to put in [class.warning] = " " --- 
+         I have tried using isSpaceDebris() in the quotes but that does not work-->
         <td>{{indexVar.operational}}</td>
         <td>{{indexVar.orbitType}}</td>
         <td>{{indexVar.launchDate}}</td> 
