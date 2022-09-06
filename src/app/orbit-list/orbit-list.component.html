@@ -10,19 +10,10 @@
     <tr class="data-row" *ngFor = "let indexVar of satellites">
 
         <td>{{indexVar.name}}</td>
-        <td>{{indexVar.type}}</td> 
+        <td class = warning [class.warning] = "false"> {{indexVar.type}}</td> 
         <td>{{indexVar.operational}}</td>
         <td>{{indexVar.orbitType}}</td>
-        <td>{{indexVar.launchDate}}</td>
-            
-    
-
-<!--         
-        <td *ngFor = "let index of satellites">{{index.name}}</td>
-        <td *ngFor = "let index of satellites">{{index.type}}</td>
-        <td *ngFor = "let index of satellites">{{index.operational}}</td>
-        <td *ngFor = "let index of satellites">{{index.orbitType}}</td>
-        <td *ngFor = "let index of satellites">{{index.launchDate}}</td> --> 
+        <td>{{indexVar.launchDate}}</td> 
       
     </tr> 
 
